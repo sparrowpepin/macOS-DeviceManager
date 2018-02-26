@@ -63,11 +63,6 @@ class ViewController: NSViewController {
         self.devices.append(Device(name: "PFSense", location: "Shack", macAddress: nil, ipAddress: "10.42.0.1"))
     }
     
-    
-    @IBAction func editPressed(_ sender: Any) {
-        performSegue(withIdentifier: NSStoryboardSegue.Identifier(rawValue: "editSegue"), sender: sender)
-    }
-    
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
         print("preparing segue")
         
